@@ -1,4 +1,4 @@
-# Task-Manager-Eisenhower-Matrix
+# Task Manager - Eisenhower Matrix
 
 ![](screenshot.png)
 
