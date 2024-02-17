@@ -17,5 +17,8 @@ Prioritizing tasks by urgency and importance results in 4 quadrants with differe
 ➃ Don’t Do: What’s neither urgent nor important, don’t do at all.
 
 ## This version
-This version store your tasks locally on your browser and computer. This means if you change the browser and/or the computer you will not see your task anymore.
+This version store your tasks locally on your browser and computer. This means if you change the browser and/or the computer you will not see your tasks anymore.
+
+## HOW TO ?
+
 
