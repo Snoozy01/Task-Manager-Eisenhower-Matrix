@@ -1,0 +1,111 @@
+body {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2px;
+    margin: 0;
+}
+
+.centered-content {
+    display: grid;
+	grid-column: span 2;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Set width to 100% to cover the full screen */
+}
+
+.column {
+    border: 5px solid;
+    min-height: 250px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+}
+
+#do-first {
+    border-color: green;
+}
+
+#schedule {
+    border-color: blue;
+}
+
+#delegate {
+    border-color: #FFD700;
+}
+
+#routine {
+    border-color: #FFA500;
+}
+
+.headline {
+	font-size: 50px;
+	font-weight: bold;
+}
+.title-line {
+    display: flex;
+	margin-bottom: 5px;
+	align-items: flex-end;
+	border-bottom: 2px solid #ccc;
+}
+
+.title {
+    margin: 0;
+	font-size: 30px;
+	font-weight: bold; 
+}
+
+.task-description {
+    margin: 4px 6px;
+	font-size: 15px;
+	text-align: left;
+}
+
+.counter {
+    font-size: 30px;
+	font-weight: bold; 
+	margin-left: auto;
+}
+
+.task-input {
+    width: 98%;
+    align-self: flex-start;
+    padding: 5px;
+    margin-top: 4px;
+}
+
+.task-input-edit {
+    width: 340%; /* Set the width of the input field */
+    padding: 0px; /* Add padding for better appearance */
+    font-size: 15px; /* Adjust font size if needed */
+}
+
+.task-list {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+	max-height: 150px;
+}
+
+.task {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 0px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    align-items: center; /* Align items vertically in the middle */
+}
+
+.task-text {
+    margin-right: auto; /* Push the text to the left by setting right margin to auto */
+}
+
+.status-icon, .trash-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0 10px; /* Add margin around the icons for spacing */
+}
+

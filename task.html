@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+
+	<div class="headline"><img src="apple-touch-icon.png" alt="logo" width="35" height="35"> Eisenhower Matrix</div>
+	<div><span class="showtask-icon"></span></div>
+
+	<div class="column" id="do-first" ondrop="drop(event, 'do-first')" ondragover="allowDrop(event)">
+		<div class="title-line"><span class="title">Do First</span><span class="task-description"> - Urgent & Important</span><span class="counter">0</span></div>
+		<input type="text" class="task-input" placeholder="Add new task..." onkeydown="addTask('do-first', event)">
+		<div class="task-list"></div>
+	</div>
+	<div class="column" id="schedule" ondrop="drop(event, 'schedule')" ondragover="allowDrop(event)">
+		<div class="title-line"><h2 class="title">Schedule</h2><p class="task-description"> - Less Urgent but Important</p><span class="counter">0</span></div>
+		<input type="text" class="task-input" placeholder="Add new task..." onkeydown="addTask('schedule', event)">
+		<div class="task-list"></div>
+	</div>
+	<div class="column" id="delegate" ondrop="drop(event, 'delegate')" ondragover="allowDrop(event)">
+		<div class="title-line"><h2 class="title">Delegate</h2><p class="task-description"> - Urgent but less Important</p><span class="counter">0</span></div>
+		<input type="text" class="task-input" placeholder="Add new task..." onkeydown="addTask('delegate', event)">
+		<div class="task-list"></div>
+	</div>
+	<div class="column" id="routine" ondrop="drop(event, 'routine')" ondragover="allowDrop(event)">
+		<div class="title-line"><h2 class="title">Routine</h2><p class="task-description"> - Tasks to perform periodically</p><span class="counter">0</span></div>
+		<input type="text" class="task-input" placeholder="Add new task..." onkeydown="addTask('routine', event)">
+		<div class="task-list"></div>
+	</div>
+	
+	<div class="centered-content">Don't Do tasks that are neither Urgent nor Important !</div>
+    <script defer src="script.js"></script>
+</body>
+
+</html>
